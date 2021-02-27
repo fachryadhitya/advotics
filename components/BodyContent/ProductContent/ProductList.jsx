@@ -14,8 +14,8 @@ export default function ProductList({ text }) {
       </div>
 
       <div className={styles.listLayout}>
-        {dummyData.map((item) => (
-          <div className={styles.cardList}>
+        {dummyData.map((item, i) => (
+          <div key={i} className={styles.cardList}>
             <img className={styles.image} src={item.image} alt="Product" />
 
             <div className={styles.product}>

@@ -4,7 +4,7 @@ import {
   createStaticRanges,
   DateRange,
 } from "react-date-range";
-import { addDays, format } from "date-fns";
+import { addDays, addMonths, format, startof, startOfMonth } from "date-fns";
 import { defineds } from "../../../utils";
 import { Modal, Button } from "antd";
 import { CalendarOutlined } from "@ant-design/icons";
@@ -123,6 +123,7 @@ export default function DatePickerComponentt() {
             ranges={state}
             color="#37B04C"
             rangeColors={["#37B04C"]}
+            maxDate={startOfMonth(addMonths(new Date(), +6))}
           />
         ) : (
           <DateRangePicker
@@ -135,6 +136,7 @@ export default function DatePickerComponentt() {
             staticRanges={staticRanges}
             color="#37B04C"
             rangeColors={["#37B04C"]}
+            maxDate={startOfMonth(addMonths(new Date(), +6))}
           />
         )}
       </Modal>
