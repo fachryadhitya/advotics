@@ -1,0 +1,25 @@
+.wrapper {
+  margin: 0 16px;
+}
+
+.button {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+@media (min-width: 640px) {
+}
+
+/* Medium (md) */
+@media (min-width: 768px) {
+}
+
+/* Large (lg) */
+@media (min-width: 1024px) {
+}
+
+/* Extra Large (xl) */
+@media (min-width: 1280px) {
+}
